@@ -5,7 +5,7 @@
 function calculateRemainders(proportions, availableGrams) {
 
     // if one portion not available return availableGrams
-    if (proportions.length>availableGrams.length) {
+    if (proportions.length>availableGrams.length || (Math.min(...availableGrams) < 0)) {
         return availableGrams;
     }
     
